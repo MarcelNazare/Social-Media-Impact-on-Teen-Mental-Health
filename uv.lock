@@ -987,6 +987,15 @@ wheels = [
 ]
 
 [[package]]
+name = "perlcompat"
+version = "1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/38/aa/0c57c10ce466505988f04c7e05a35279a4dedb6b6bf8819a165e02819f56/perlcompat-1.1.tar.gz", hash = "sha256:1d2568814b2ceef1dc32c1393fab78c6dd94bea04eb50b97828f7dc3c3b1a5ea", size = 3100, upload-time = "2019-07-05T09:20:12.276Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/42/ab/328e564486228c8ed12085e4439fd39351e23333f52a8ed6833e4715efb8/perlcompat-1.1-py3-none-any.whl", hash = "sha256:4548c2c91fd3df95015581d8454f1d568b0851f6e89057315cfb3baf80c0af6d", size = 15780, upload-time = "2019-07-05T09:20:10.277Z" },
+]
+
+[[package]]
 name = "pexpect"
 version = "4.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1198,6 +1207,18 @@ wheels = [
 ]
 
 [[package]]
+name = "py-stats"
+version = "0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "perlcompat" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6b/92/eea383d2e7469a20670694cbb9b2883d429d723f090c7da53d6b77c163cc/py-stats-0.2.tar.gz", hash = "sha256:0cb63bf846d48fbbdc18cf1e3fbf42e7269484afe897f7c84585a42dabf538ba", size = 7245, upload-time = "2023-03-20T18:20:05.526Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d0/de/3ec76da4f5c4fcf27a3b02c09b1eaa968cecbe0b26d1c457003e00d635a7/py_stats-0.2-py3-none-any.whl", hash = "sha256:201a98e485fbcc7dee07e398b49ec91221d29c0cf2a81f9a85b1bcc53c8e673e", size = 18746, upload-time = "2023-03-20T18:20:03.842Z" },
+]
+
+[[package]]
 name = "pyarrow"
 version = "23.0.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1401,6 +1422,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee498c46e004a0eb49bc148f2fd230864601a86dcf6db/python-dateutil-2.9.0.post0.tar.gz", hash = "sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3", size = 342432, upload-time = "2024-03-01T18:36:20.211Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427", size = 229892, upload-time = "2024-03-01T18:36:18.57Z" },
+]
+
+[[package]]
+name = "python-stats"
+version = "1.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6a/ed/88853019c1d09f988ea2455c82f577adb3e00ab38d5f9282d491c2dbc691/python_stats-1.0.1.tar.gz", hash = "sha256:9d2d6d7296fab7ba5610ed7a105836161ca765ddaee3d69bc04974e9b6408f2e", size = 29878, upload-time = "2025-09-04T00:07:21.703Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/57/19/9cb6cd568e54d9ab383752259755379f12bc30921dbcdcae002c44256833/python_stats-1.0.1-py3-none-any.whl", hash = "sha256:5bc4d2c34163b25c1252a60f9069f4b072862b5bde53713fcceacc97b58da157", size = 19021, upload-time = "2025-09-04T00:07:20.767Z" },
 ]
 
 [[package]]
@@ -1687,7 +1720,9 @@ dependencies = [
     { name = "ipykernel" },
     { name = "ipywidgets" },
     { name = "polars-lts-cpu" },
+    { name = "py-stats" },
     { name = "pyarrow" },
+    { name = "python-stats" },
     { name = "setuptools" },
     { name = "sweetviz" },
     { name = "ydata-profiling" },
@@ -1703,7 +1738,9 @@ requires-dist = [
     { name = "ipykernel", specifier = ">=7.2.0" },
     { name = "ipywidgets", specifier = ">=8.1.8" },
     { name = "polars-lts-cpu", specifier = ">=1.33.1" },
+    { name = "py-stats", specifier = ">=0.2" },
     { name = "pyarrow", specifier = ">=23.0.1" },
+    { name = "python-stats", specifier = ">=1.0.1" },
     { name = "setuptools", specifier = "<82" },
     { name = "sweetviz", specifier = ">=2.3.3" },
     { name = "ydata-profiling", specifier = "==4.6.4" },

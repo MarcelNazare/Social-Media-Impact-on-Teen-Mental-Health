@@ -12,3 +12,7 @@ ruff:
 degrade:
 	@uv remove setuptools
 	@uv add "setuptools<82.0.0"
+
+freeze:
+	@uv pip freeze > requirements.txt
+	@uv sync
