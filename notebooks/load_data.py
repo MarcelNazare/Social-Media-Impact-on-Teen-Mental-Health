@@ -19,3 +19,4 @@ def load_unprocessed_data():
     df = pl.read_parquet(data_path)
     
     return df
+
