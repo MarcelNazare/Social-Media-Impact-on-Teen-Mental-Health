@@ -16,6 +16,7 @@ dependencies = [
     "py-stats>=0.2",
     "pyarrow>=23.0.1",
     "python-stats>=1.0.1",
+    "scikit-learn>=1.8.0",
     "setuptools<82",
     "sweetviz>=2.3.3",
     "ydata-profiling==4.6.4",
