@@ -16,3 +16,6 @@ degrade:
 freeze:
 	@uv pip freeze > requirements.txt
 	@uv sync
+
+parquet2csv:
+	@uv run ./scripts/parquet_to_csv.py -i "C:\Users\marcel\Documents\Data Analysis Projects\Social Media Impact on Teen Mental Health Project\Social Media Impact on Teen Mental Health\data\processed" -o "C:\Users\marcel\Documents\Data Analysis Projects\Social Media Impact on Teen Mental Health Project\Social Media Impact on Teen Mental Health\data\processed"
